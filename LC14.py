@@ -9,10 +9,7 @@ class Solution:
         for i in range(min_len):
           check = set()
           for s in strlist:
-            if s == "":
-              return res
-            else:
-              check.add(s[0])
+            check.add(s[0])
           if len(check) == 1:
             res += strlist[0][0]
           else:
